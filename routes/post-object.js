@@ -45,7 +45,7 @@ function retrieveKeyValuePairs(data_base, json_key, id) {
  */
 router.post('/', function (req, res) {
 
-    if (req.body != undefined || req.body != null) {
+    if (!req.body) {
 
         res.status(400);
         res.json({ message: "Bad Request" });

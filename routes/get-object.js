@@ -31,7 +31,7 @@ function retrieveKeyValuePairsBasedOnTimestamp(data_base, key, time_stamp) {
  */
 router.get('/:mykey', function (req, res) {
 
-    if (req.params != undefined || req.params != null) {
+    if (!req.params) {
 
         res.status(400);
         res.json({ message: "Bad Request" });
