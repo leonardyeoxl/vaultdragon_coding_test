@@ -30,7 +30,7 @@ app.use('/post-object', postObjectAPI);
 var getObjectAPI = require('./routes/get-object.js');
 app.use('/get-object', getObjectAPI);
 
-const server = app.listen(80, function () {
+const server = app.listen(8080, function () {
     const host = server.address().address
     const port = server.address().port
 
